@@ -27,7 +27,7 @@ jobs:
             # If modified directories contain Gopkg/vendor directores, build all projects and exit
             buildall=0
             for project in `cat projects`; do
-              if [[ ${project} =~ "lerna" || ${project} =~ "package.json" || || ${project} =~ "README.md" ]]; then
+              if [[ ${project} =~ "lerna" || ${project} =~ "package.json" || ${project} =~ "README.md" ]]; then
                 buildall=1
                 echo -e "Dependencies change detected. building all $CIRCLE_PROJECT_REPONAME"
                 curl -s -u ${CIRCLE_TOKEN}: \
