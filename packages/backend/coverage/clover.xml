@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1556736680648" clover="3.2.0">
+  <project timestamp="1556736680648" name="All files">
+    <metrics statements="46" coveredstatements="33" conditionals="23" coveredconditionals="19" methods="19" coveredmethods="8" elements="88" coveredelements="60" complexity="0" loc="46" ncloc="46" packages="3" files="10" classes="10"/>
+    <package name="src">
+      <metrics statements="9" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="app.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/app.js">
+        <metrics statements="8" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+      <file name="config.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/config.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.github">
+      <metrics statements="14" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="5"/>
+      <file name="defaultConfig.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/defaultConfig.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/index.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="queries.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/queries.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.github.graphql">
+      <metrics statements="23" coveredstatements="22" conditionals="19" coveredconditionals="18" methods="9" coveredmethods="3"/>
+      <file name="commons.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/graphql/commons.js">
+        <metrics statements="13" coveredstatements="12" conditionals="15" coveredconditionals="14" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="11" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="20" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="14" type="stmt"/>
+        <line num="24" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="14" type="stmt"/>
+        <line num="30" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="36" count="14" type="stmt"/>
+      </file>
+      <file name="organization.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/graphql/organization.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="project.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/graphql/project.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="repository.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/graphql/repository.js">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+      </file>
+      <file name="user.js" path="/Users/smouillour/Development/Perso/Dashboard/packages/backend/src/services/github/graphql/user.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
