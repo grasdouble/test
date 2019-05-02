@@ -70,6 +70,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: add-github-token
+          command: 'sed 's/GITHUB_TOKEN/$GITHUB_TOKEN/g' packages/backend/config.js'
+      - run:
           name: update-npm
           command: 'sudo npm install -g npm@6.9.0'
       - restore_cache:
