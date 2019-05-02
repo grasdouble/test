@@ -14,7 +14,7 @@ const cors = [
 
 server(
 	{
-		port: 4004,
+		port: 4005,
 	},
 	cors,
 	[get('/', () => 'Hello world'), ...githubRoutes],
