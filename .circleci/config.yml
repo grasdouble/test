@@ -20,7 +20,7 @@ jobs:
               COMMITS="${CIRCLE_SHA1}..${LAST_SUCCESSFUL_COMMIT}"
             fi
 
-            git diff --name-only $COMMITS | cut -d/ -f1 | sort -u > projects
+            git diff --name-only $COMMITS | cut -d/ -f2 | sort -u > projects
             echo -e "Modified directories:\n`cat projects`\n"
 
 
@@ -45,7 +45,7 @@ jobs:
             echo -e "Calculating dependencies\n"
             for dir in `ls -d */`; do
               for dep in `go list -f '{{ .Deps }}' ./${dir} 2>/dev/null`; do
-                for project_dep in `echo $dep | grep github.com/tufin/$CIRCLE_PROJECT_REPONAME | egrep -v "vendor|${dir%\/}"`; do
+                for project_dep in `echo $dep | grep github.com/grasdouble/$CIRCLE_PROJECT_REPONAME | egrep -v "vendor|${dir%\/}"`; do
                   if [[ " ${projects_inc_dep[@]} " =~ " ${project_dep##*\/} " ]] && ! [[ " ${projects_inc_dep[@]} " =~ " ${dir%\/} " ]]; then
                     projects_inc_dep+=(${dir%\/})
                   fi
